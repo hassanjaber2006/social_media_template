@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b1c8692d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Sociall | Login</title>
+</head>
+<body class="login-body">
+    <div class="form-container">
+        <form action="" method="POST">
+            <h2 class="form-title">Login</h2>
+            <div class="input-box">
+                <label for="user">Email or Username</label>
+                <input type="text" id="user" required />
+            </div>
+            <div class="input-box">
+                <label for="passwordLogin">Password</label>
+                <input type="password" id="passwordLogin" required />
+                <span id="show-hide-p">
+                    <i class="fa-solid fa-eye" id="btn_shp" onclick="show_hide_passwor()"></i>
+                </span>
+            </div>
+            <input type="checkbox" name="" id=""> 
+                <span class="rem">Remember me</span> <br>
+            <button type="submit" class="form-btn">Log in</button> <br>
+            <hr class="form-hr">
+            <div class="form-footer">
+                dont have an account? <a href="register.html">Register</a><br> 
+                <a href="">forgot password?</a> 
+            </div>
+        </form>
+    </div>
+    <script src="../main.js"></script>
+    <script src="verify.js"></script>
+</body>
+</html>

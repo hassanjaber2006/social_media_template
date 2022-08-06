@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b1c8692d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Sociall | Home</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-1">
+            <a href="index.html">Home</a>
+            <a href="new_post.html" class="active">New Post</a>
+        </nav> 
+        <div class="search-box">
+            <form action="">
+                <input type="text" placeholder="search people..">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <nav id="nav-2">
+            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a>
+                <i class="fa-solid fa-magnifying-glass" role="button" id="search-box-btn" onclick="search_box_shf()"></i>
+            </a>
+            <a href="new_post.html" class="active2"><i class="fa-solid fa-circle-plus"></i></a>
+            <span class="notification">
+                <i class="fa-solid fa-bell" role="button" id="not-btn" onclick="notifications_shf()"></i> <sup>99+</sup>
+            </span>
+        </nav>
+        <div class="avatar">
+            <span class="notification">
+                <i class="fa-solid fa-bell" role="button" id="not-btn" onclick="notifications_shf()"></i> <sup>99+</sup>
+            </span>
+            <a href="../accounts/profile.html">
+                <img src="../images/p2.jpg" alt="sory">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="form-container">
+            <form action="" method="post">
+                <h2 class="form-title">New Post</h2>
+                <div class="input-box">
+                    <label for="privacy_settings">Mention People</label>
+                    <input type="text" id="search_people_for_mention" placeholder="search people for mention..">
+                    <select name="privacy_settings" multiple style="height: 66px;">
+                        <option id="mention-users" value="hassanjaber2022">hassanjaber2022</option>
+                        <option id="mention-users" value="Ali20">Ali20</option>
+                        <option id="mention-users" value="user55">user55</option>
+                        <option id="mention-users" value="ahmadj2009">ahmadj2009</option>
+                        <option id="mention-users" value="walidbrj_2008">walidbrj_2008</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="caption">Caption</label>
+                    <textarea type="text" id="caption" style="height: 66px;">My first post</textarea>
+                </div>
+                <div class="input-box">
+                    <div id="uploaded_img">
+                        <img src="" style="width:100%;height: 300px;display:none" id="selected-img" alt="">
+                    </div>
+                    <small class="required">Please dont try to upload more than one, only latest uploaded. <sup>*</sup></small>
+                    <label for="file" id="fileLabel" class="newPost-file">
+                        <i class="fa-solid fa-photo-film"></i>
+                    </label>
+                    <button id="fileRemove" type="button">Remove File</button>
+                    <input type="file" name="file" id="file" style="display:none" required />
+                </div>
+                <button type="submit" class="form-btn" id="reset_storage">Share Post</button> 
+            </form>
+        </div>
+    </main>
+    <div class="notification-box" id="notification-box">
+        <h2 class="t-c" style="display: inline-block;">Notifications</h2> 
+        <i class="fa-solid fa-xmark" id="close_notifcation" role="button" onclick="notifications_shf()"></i>
+        <hr class="main-hr">
+        <ul>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Liked your post
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Liked your post
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Liked your post
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Stated following you
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Stated following you
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Stated following you
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="../main.js"></script>
+    <script>
+        document.getElementById('file').addEventListener('change',function (){
+            const reader = new FileReader();
+            reader.addEventListener('load',() =>{
+                localStorage.setItem("recent-img",reader.result);
+            });
+            reader.readAsDataURL(this.files[0]);
+            const img_url = localStorage.getItem('recent-img')
+            if(img_url){
+                remove_btn.style.display = 'block'
+                document.getElementById('selected-img').style.display = 'block'
+                document.getElementById('selected-img').setAttribute('src',img_url)
+            }
+        })
+        document.getElementById('reset_storage').addEventListener('click',()=>{
+            localStorage.clear()
+        })
+        var remove_btn = document.getElementById('fileRemove')
+        var input = document.getElementById('file')
+        remove_btn.addEventListener('click',function () {
+            input.files == null
+            localStorage.clear()
+            document.getElementById('selected-img').setAttribute('src','')
+            document.getElementById('selected-img').style.display = 'none'
+            remove_btn.style.display = 'none'
+        })
+        document.getElementById('search_people_for_mention').addEventListener('keyup',()=>{
+                var users = document.querySelectorAll('#mention-users')
+                var searchR = document.getElementById('search_people_for_mention').value
+                users.forEach(myFunction);
+                function myFunction(value) {
+                    if (value.value.indexOf(searchR) != -1) {
+                        value.style.display = 'block'
+                    }
+                    else{
+                        value.style.display = 'none'
+                    }
+                } 
+            })
+    </script>
+</body>
+</html>

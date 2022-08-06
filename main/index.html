@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b1c8692d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Sociall | Home</title>
+</head>
+<body>
+    <header>
+        <nav id="nav-1">
+            <a href="index.html" class="active">Home</a>
+            <a href="new_post.html">New Post</a>
+        </nav> 
+        <div class="search-box">
+            <form action="">
+                <input type="text" placeholder="search people..">
+                <button type="submit">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+        </div>
+        <nav id="nav-2">
+            <a href="index.html" class="active2"><i class="fa-solid fa-house"></i></a>
+            <a>
+                <i class="fa-solid fa-magnifying-glass" role="button" id="search-box-btn" onclick="search_box_shf()"></i>
+            </a>
+            <a href="new_post.html"><i class="fa-solid fa-circle-plus"></i></a>
+            <span class="notification">
+                <i class="fa-solid fa-bell" role="button" id="not-btn" onclick="notifications_shf()"></i> <sup>99+</sup>
+            </span>
+        </nav>
+        <div class="avatar">
+            <span class="notification">
+                <i class="fa-solid fa-bell" role="button" id="not-btn" onclick="notifications_shf()"></i> <sup>99+</sup>
+            </span>
+            <a href="../accounts/profile.html">
+                <img src="../images/p2.jpg" alt="sory">
+            </a>
+        </div>
+    </header>
+    <main>
+        <div class="index-container">
+            <div class="post-type">
+                <span class="pt-active">All</span>  | <span>Following</span> 
+            </div> 
+            <hr class="index-hr">
+            <div class="search-box" id="search-box-2">
+                <form action="">
+                    <input type="text" placeholder="search people..">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <div class="main">
+                <div class="posts">
+                    <h2 class="t-c">All Posts</h2>
+                    <hr>
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="../images/p2.jpg" alt="sorry">
+                            <div>
+                                <span> 
+                                    <a href="">@hassan jaber</a>
+                                </span>
+                                <a href="">follow</a>
+                                <br>
+                                <span class="date">(8/4/22)</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="post-body">
+                            <div class="caption">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam, eum quidem cupiditate exercitationem, soluta, fuga ea sunt aut minima aliquid. Temporibus, repudiandae sunt reiciendis voluptas totam quaerat dolore quia!
+                                </p>
+                            </div>
+                            <img src="../images/p2.jpg" alt="sorry">
+                        </div>
+                        <form action="">
+                            <div class="add-comment-input" id="add-comment-input">
+                                <input type="text" placeholder="Add Comment..." autofocus id="add-commentInput" />
+                                <button type="submit">
+                                    <i class="fa-solid fa-circle-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="post-footer">
+                                <a href=""><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a>
+                                    <i class="fa-solid fa-comment" role="button" id="add-comment-btn" onclick="add_comment_shf()"></i>
+                                </a>
+                                <a href=""><i class="fa-solid fa-share"></i></a>
+                                <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                                <br>
+                            <span class="comment-number">
+                             <a href="">33 likes</a>   &nbsp; <a href="">66 comments</a> 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="../images/p2.jpg" alt="sorry">
+                            <div>
+                                <span> 
+                                    <a href="">@hassan jaber</a>
+                                </span>
+                                <a href="">follow</a>
+                                <br>
+                                <span class="date">(8/4/22)</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="post-body">
+                            <div class="caption">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam, eum quidem cupiditate exercitationem, soluta, fuga ea sunt aut minima aliquid. Temporibus, repudiandae sunt reiciendis voluptas totam quaerat dolore quia!
+                                </p>
+                            </div>
+                            <img src="../images/p2.jpg" alt="sorry">
+                        </div>
+                        <form action="">
+                            <div class="add-comment-input" id="add-comment-input">
+                                <input type="text" placeholder="Add Comment..." autofocus id="add-commentInput" />
+                                <button type="submit">
+                                    <i class="fa-solid fa-circle-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="post-footer">
+                                <a href=""><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a>
+                                    <i class="fa-solid fa-comment" role="button" id="add-comment-btn" onclick="add_comment_shf()"></i>
+                                </a>
+                                <a href=""><i class="fa-solid fa-share"></i></a>
+                                <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                                <br>
+                            <span class="comment-number">
+                             <a href="">33 likes</a>   &nbsp; <a href="">66 comments</a> 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="../images/p2.jpg" alt="sorry">
+                            <div>
+                                <span> 
+                                    <a href="">@hassan jaber</a>
+                                </span>
+                                <a href="">follow</a>
+                                <br>
+                                <span class="date">(8/4/22)</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="post-body">
+                            <div class="caption">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam, eum quidem cupiditate exercitationem, soluta, fuga ea sunt aut minima aliquid. Temporibus, repudiandae sunt reiciendis voluptas totam quaerat dolore quia!
+                                </p>
+                            </div>
+                            <img src="../images/p2.jpg" alt="sorry">
+                        </div>
+                        <form action="">
+                            <div class="add-comment-input" id="add-comment-input">
+                                <input type="text" placeholder="Add Comment..." autofocus id="add-commentInput" />
+                                <button type="submit">
+                                    <i class="fa-solid fa-circle-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="post-footer">
+                                <a href=""><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a>
+                                    <i class="fa-solid fa-comment" role="button" id="add-comment-btn" onclick="add_comment_shf()"></i>
+                                </a>
+                                <a href=""><i class="fa-solid fa-share"></i></a>
+                                <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                                <br>
+                            <span class="comment-number">
+                             <a href="">33 likes</a>   &nbsp; <a href="">66 comments</a> 
+                            </span>
+                        </div>
+                    </div>
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="../images/p2.jpg" alt="sorry">
+                            <div>
+                                <span> 
+                                    <a href="">@hassan jaber</a>
+                                </span>
+                                <a href="">follow</a>
+                                <br>
+                                <span class="date">(8/4/22)</span>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="post-body">
+                            <div class="caption">
+                                <p>
+                                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam ullam, eum quidem cupiditate exercitationem, soluta, fuga ea sunt aut minima aliquid. Temporibus, repudiandae sunt reiciendis voluptas totam quaerat dolore quia!
+                                </p>
+                            </div>
+                            <img src="../images/p2.jpg" alt="sorry">
+                        </div>
+                        <form action="">
+                            <div class="add-comment-input" id="add-comment-input">
+                                <input type="text" placeholder="Add Comment..." autofocus id="add-commentInput" />
+                                <button type="submit">
+                                    <i class="fa-solid fa-circle-right"></i>
+                                </button>
+                            </div>
+                        </form>
+                        <div class="post-footer">
+                                <a href=""><i class="fa-regular fa-thumbs-up"></i></a>
+                                <a>
+                                    <i class="fa-solid fa-comment" role="button" id="add-comment-btn" onclick="add_comment_shf()"></i>
+                                </a>
+                                <a href=""><i class="fa-solid fa-share"></i></a>
+                                <a href=""><i class="fa-regular fa-bookmark"></i></a>
+                                <br>
+                            <span class="comment-number">
+                             <a href="">33 likes</a>   &nbsp; <a href="">66 comments</a> 
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <div class="suggestions-freinds">
+                        <h2 class="t-c" style="margin: 0;padding:2px 0">Suggestions Freinds</h2>
+                        <hr>
+                        <div class="freind">
+                            <div>
+                                <img src="../images/p2.jpg" alt="sorry">
+                                <h3 style="display: inline;"> 
+                                    <a href="">hassan jaber</a>
+                                </h3>
+                            </div>
+                            <button>follow</button>
+                        </div>
+                        <div class="freind">
+                            <div>
+                                <img src="../images/p2.jpg" alt="sorry">
+                                <h3 style="display: inline;"> 
+                                    <a href="">hassan jaber</a>
+                                </h3>
+                            </div>
+                            <button>follow</button>
+                        </div>
+                        <div class="freind">
+                            <div>
+                                <img src="../images/p2.jpg" alt="sorry">
+                                <h3 style="display: inline;"> 
+                                    <a href="">hassan jaber</a>
+                                </h3>
+                            </div>
+                            <button>follow</button>
+                        </div>
+                        <div class="freind">
+                            <div>
+                                <img src="../images/p2.jpg" alt="sorry">
+                                <h3 style="display: inline;"> 
+                                    <a href="">hassan jaber</a>
+                                </h3>
+                            </div>
+                            <button>follow</button>
+                        </div>
+                        <div class="freind">
+                            <div>
+                                <img src="../images/p2.jpg" alt="sorry">
+                                <h3 style="display: inline;"> 
+                                    <a href="">hassan jaber</a>
+                                </h3>
+                            </div>
+                            <button>follow</button>
+                        </div>
+                    </div> 
+                    <br>
+                    <div class="last-post">
+                        <h2 class="t-c">Last Posts</h2>
+                        <hr>
+                        <div class="freind">
+                            <div>
+                                <img src="../images/p2.jpg" alt="sorry" style="border-radius: 0;">
+                                <h3 style="display: inline;"> 
+                                    <a href="">hassan jaber</a> <br>
+                                    <span>(8/4/22)</span>
+                                </h3>
+                            </div>
+                            <button>Go</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="notification-box" id="notification-box">
+        <h2 class="t-c" style="display: inline-block;">Notifications</h2> 
+        <i class="fa-solid fa-xmark" id="close_notifcation" role="button" onclick="notifications_shf()"></i>
+        <hr class="main-hr">
+        <ul>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Liked your post
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Liked your post
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Liked your post
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                        
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Stated following you
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Stated following you
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="post-header">
+                    <img src="../images/p2.jpg" alt="sorry">
+                    <div>
+                        <span> 
+                            <a href="" class="notfication-username">hassan jaber</a>
+                        </span>
+                        <p>
+                            Stated following you
+                            <span class="date">(8/4/22)</span>
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <script src="../main.js"></script>
+</body>
+</html>

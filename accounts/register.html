@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b1c8692d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Sociall | Register</title>
+</head>
+<body class="login-body">
+    <div class="form-container">
+        <form action="" method="POST">
+            <h2 class="form-title">Register</h2>
+            <div class="input-box">
+                <label for="username">Username <sup class="required">*</sup> </label>
+                <input type="text" placeholder="username123" id="fname" required />
+            </div>
+            <div class="input-box">
+                <label for="email">Email <sup class="required">*</sup> </label>
+                <input type="email" placeholder="email@exemple.com" id="email" required />
+            </div>
+            <div class="input-box">
+                <label for="date">Date of Bhirthday</label>
+                <input type="date" id="date">
+            </div>
+            <div class="input-box">
+                <label for="passwordLogin">Password <sup class="required">*</sup> </label>
+                <input type="password" value="*****" id="passwordLogin" required />
+                <span id="show-hide-p">
+                    <i class="fa-solid fa-eye" id="btn_shp" onclick="show_hide_passwor()"></i>
+                </span>
+            </div>
+            <div class="input-box">
+                <label for="file">Profile Picture <sup class="required">*</sup> </label>
+                <input type="file" id="file" style="padding: 5px 6px;height:34px" required />
+            </div>
+            <button type="submit" class="form-btn">Register</button> <br>
+            <hr class="form-hr">
+            <div class="form-footer">
+               I have an account, <a href="login.html">Login</a><br> 
+            </div>
+        </form>
+    </div>
+    <script src="../main.js"></script>
+    <script src="verify.js"></script>
+</body>
+</html>

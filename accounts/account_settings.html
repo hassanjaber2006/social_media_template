@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/2b1c8692d9.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <title>Sociall | Acoount Settings</title>
+</head>
+    <body>
+        <header>
+            <nav id="nav-1">
+                <a href="../main/index.html">Home</a>
+                <a href="../main/new_post.html">New Post</a>
+            </nav> 
+            <div class="search-box">
+                <form action="">
+                    <input type="text" placeholder="search people..">
+                    <button type="submit">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </form>
+            </div>
+            <nav id="nav-2">
+                <a href="../main/index.html"><i class="fa-solid fa-house"></i></a>
+                <a href="../main/index.html">
+                    <i class="fa-solid fa-magnifying-glass" role="button"></i>
+                </a>
+                <a href="../main/new_post.html"><i class="fa-solid fa-circle-plus"></i></a>
+                <span class="notification">
+                    <i class="fa-solid fa-bell" role="button" id="not-btn" onclick="notifications_shf()"></i> <sup>99+</sup>
+                </span>
+            </nav>
+            <div class="avatar">
+                <span class="notification">
+                    <i class="fa-solid fa-bell" role="button" id="not-btn" onclick="notifications_shf()"></i> <sup>99+</sup>
+                </span>
+                <a href="profile.html"><img src="../images/p2.jpg" alt="sory"></a>
+            </div>
+        </header>
+        <main style="padding-top: 45px;">
+            <aside class="user-settings" id="user-settings1"> 
+                <a id="OC_asideA">
+                    <i class="fa-solid fa-xmark" id="OC_aside5" role="button" onclick="aside_settings_shf()"></i>
+                </a>
+                <a href="profile.html">Profile</a>
+                <a href="edit_profile.html">Edit Profile</a>
+                <a href="save_post.html">Saved Post</a>
+                <a href="account_settings.html" class="active-userS">Account Settings</a>
+                <hr>
+                <a href="">Logout</a> 
+            </aside>
+            <aside class="user-settings" id="user-settings2">
+                <a id="OC_asideA">
+                    <i class="fa-solid fa-angles-right" id="OC_aside" role="button" onclick="aside_settings_shf()"></i>
+                </a>
+                <a href="profile.html">
+                    <i class="fa-solid fa-user"></i>
+                </a>
+                <a href="edit_profile.html">
+                    <i class="fa-solid fa-user-pen"></i>
+                </a>
+                <a href="save_post.html">
+                    <i class="fa-solid fa-bookmark"></i>
+                </a>
+                <a href="account_settings.html"  class="active-userS">
+                    <i class="fa-solid fa-gear"></i>
+                </a>
+                <hr>
+                <a href="">
+                    <i class="fa-solid fa-right-from-bracket"></i>
+                </a> 
+            </aside>
+            <div class="profile-body">
+                <div class="form-container">
+                    <form action="" method="POST">
+                        <h2 class="form-title" style="margin-bottom: 5px;">Account Settings:</h2>
+                        <hr>
+                        <div class="input-box">
+                            <label for="privacy_settings">Account Privacy 
+                                <i class="fa-solid fa-circle-question" role="button" id="settings-btn-privacy" onclick="settings_description_shf('settings-description-privacy')"></i>
+                            </label>
+                            <select name="privacy_settings" id="privacy_settings">
+                                <option value="public" selected>public</option>
+                                <option>privet</option>
+                            </select>
+                        </div>
+                        <div class="settings-description" id="settings-description-privacy">
+                            <p>
+                                - When you select <span class="focus-option">public</span>, everyone can see followers and following. <br>
+                                - When you select <span class="focus-option">private</span>, only your friends can see posts and more .                          
+                            </p>
+                        </div>
+                        <div class="input-box">
+                            <label for="mention_settings">Allow Mention 
+                                <i class="fa-solid fa-circle-question" role="button" id="settings-btn-mention" onclick="settings_description_shf('settings-description-mention')"></i>
+                            </label>
+                            <select name="mention_settings" id="mention_settings">
+                                <option value="" selected>enable</option>
+                                <option value="">disable</option>
+                            </select>
+                        </div>
+                        <div class="settings-description" id="settings-description-mention">
+                            <p>
+                                - This option allows you to select if others can <span class="focus-option">mentioned you</span> in their posts                        
+                            </p>
+                        </div>
+                        <div class="input-box">
+                            <label for="post_settings">Posts 
+                                <i class="fa-solid fa-circle-question" role="button" id="settings-btn-posts" onclick="settings_description_shf('settings-description-posts')"></i>
+                            </label>
+                            <select name="post_settings" id="post_settings">
+                                <option value="" selected>everyone</option>
+                                <option value="">freind only</option>
+                                <option value="">nobody</option>
+                            </select>
+                        </div>
+                        <div class="settings-description" id="settings-description-posts">
+                            <p>
+                                - When you select <span class="focus-option">everyone</span>, all can see your posts. <br>
+                                - When you select <span class="focus-option">freind only</span>, only your friends can see your posts .  <br>               
+                                - When you select <span class="focus-option">nobody</span>, no one can see your posts .                 
+                            </p>
+                        </div>
+                        <button type="submit" class="form-btn">Save</button> 
+                    </form>
+                </div>
+            </div>
+        </main>
+        <div class="notification-box" id="notification-box">
+            <h2 class="t-c" style="display: inline-block;">Notifications</h2> 
+            <i class="fa-solid fa-xmark" id="close_notifcation" role="button" onclick="notifications_shf()"></i>
+            <hr class="main-hr">
+            <ul>
+                <li>
+                    <div class="post-header">
+                        <img src="../images/p2.jpg" alt="sorry">
+                        <div>
+                            <span> 
+                                <a href="" class="notfication-username">hassan jaber</a>
+                            </span>
+                            <p>
+                                Liked your post
+                                <span class="date">(8/4/22)</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-header">
+                        <img src="../images/p2.jpg" alt="sorry">
+                        <div>
+                            <span> 
+                                <a href="" class="notfication-username">hassan jaber</a>
+                            </span>
+                            <p>
+                                Liked your post
+                                <span class="date">(8/4/22)</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-header">
+                        <img src="../images/p2.jpg" alt="sorry">
+                        <div>
+                            <span> 
+                                <a href="" class="notfication-username">hassan jaber</a>
+                            </span>
+                            <p>
+                                Liked your post
+                                <span class="date">(8/4/22)</span>
+                            </p>
+                            
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-header">
+                        <img src="../images/p2.jpg" alt="sorry">
+                        <div>
+                            <span> 
+                                <a href="" class="notfication-username">hassan jaber</a>
+                            </span>
+                            <p>
+                                Stated following you
+                                <span class="date">(8/4/22)</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-header">
+                        <img src="../images/p2.jpg" alt="sorry">
+                        <div>
+                            <span> 
+                                <a href="" class="notfication-username">hassan jaber</a>
+                            </span>
+                            <p>
+                                Stated following you
+                                <span class="date">(8/4/22)</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="post-header">
+                        <img src="../images/p2.jpg" alt="sorry">
+                        <div>
+                            <span> 
+                                <a href="" class="notfication-username">hassan jaber</a>
+                            </span>
+                            <p>
+                                Stated following you
+                                <span class="date">(8/4/22)</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
+    <script src="../main.js"></script>
+</html>
